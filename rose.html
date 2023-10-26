@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Your name- portfolio
+        </title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;margin: 0%;padding: 0%;background-color:#fff;
+            }
+            header{ background-color: black;color:#fff;text-align: center;padding: 2rem 0;position:relative; /*add this*/}
+            .header-content h1{font-size:2.5rem;}/* add styles for the round profile picture*/
+            .profile-picture{width: 100px;/*adjust the size as needed*/ 
+                height: 100;
+                 border-radius: 75%; /*create a circular shape */
+                 object-fit: cover;/* to ensure the image fills the circular area*/
+                 position:absolute;/* add this*/
+                top: 75px;/*adjust top position as needed*/
+            left: 100px;/* adjust left position as needed*/
+        }
+        nav{
+            background-color: black;
+            color: #fff;
+            text-align: center;
+        }
+nav ul{ list-style-type: none;padding: 0px;}
+nav ul li { display: inline;margin: 0 20px;}
+nav  ul li a{ text-decoration: none; color:#fff;}     
+.section-content{ background-color: rgb(207, 60, 151);color: black; font-size:xx-large;padding:  2rem;margin: 1rem; border-radius: 20px;box-shadow:0 0 10px rgba(0,0,0,0.1);}
+.dowload-button{ background-color: black; color:lavender;padding: 0.5rem 1rem; text-decoration: none; border-radius: 20px;display:inline-block; margin-top: 10px;}
+.dowload-button:hover{ background-color: blue;}
+footer{ text-align: center;padding: 1rem 0; background-color:black;color :aqua;} 
+ul{ list-style-type: lower-alpha;padding: 20px;}    
+
+        </style>
+    </head>
+    <body>
+        <header>     <div class="header-content">
+                <!--add your profile picture here-->
+                <img scr="D:\flower.jpg"alt="your profile picture"class="profile-picture">
+                <h1>ROSANA BANU.S</h1>
+                <P>A passion for learning</P>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#about">about</a></li>
+                <li><a href="#education">education</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#project">project</a></li>
+                <li><a href="#resume">resume</a></li>
+            </ul>  
+        </nav>
+        <section id="about">
+            <div class=" section-content">
+                <h2> About me</h2>
+                <p> HAI! I am rosana ,I am studing in college</p>
+            </div>
+        </section>    
+        <section id="education">
+            <div class="section-content">
+                <h2>B.sc.,cs</h2>
+                <p> M.G.R arts and science college</p>
+            </div>
+        </section>
+        <section id="skills"><div class=" section-content">
+            <h2>skills</h2>
+            <u1>
+                <li>C programming</li>
+                <li> java</li>
+                <li>Html</li>
+                <li>Css </li>
+            </u1>
+        </div>
+    </section>
+    <section id="projects">
+        <div class=" section-content">
+            <h2> MILESTONE PROJECT 1</h2>
+            <u1>
+                <li><a href="#">project 1</a></li>
+                <li> <a href="#">project 2</a></li>
+                <!--add more project links here-->
+            </u1>
+        </div> 
+    </section>
+    <section id="resume">
+        <center>
+            <div class="section-content">
+                <h2>resume</h2>
+                <a href="https://docs.google.com/document/d/1DXj5vpkepZpFptf3zjrN2nvakfFe7al0/edit?usp=sharing&ouid=114389625287806688608&rtpof=true"class="dowload-button">Download CV</a>
+            </div>
+            </center>
+    </section>
+    <footer>
+        <p>&copy;2023 ROSANA BANU</p>
+    </footer>
+    <script>
+        //smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor=>{anchor.addEventListener('click',function(e){e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+    const targetElements = document.getElementById(targetId);
+if(targetElements){ window.scrollTo({ top: targetElements.offsetTop,
+behavior: 'smooth'});
+}
+});
+});
+</script>         
+    
+    
+    
+</body>
+</html>
